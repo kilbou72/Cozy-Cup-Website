@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cozy Cup Café | Coffee, Comfort & Community</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">☕ Cozy Cup Café</a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    YOUR NEIGHBORHOOD COFFEE SPOT
+                </span>
+
+                <h1>Coffee, comfort,<br>and community.</h1>
+
+                <p>
+                    A little cup of happiness in every visit.
+                    Enjoy freshly brewed coffee, delicious treats,
+                    and a cozy place to call your own.
+                </p>
+
+                <a href="#menu" class="btn">Explore Our Menu →</a>
+
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+
+            <div class="container about-content">
+
+                <div>
+                    <span class="eyebrow">OUR STORY</span>
+
+                    <h2>A cozy corner<br>to call your own.</h2>
+                </div>
+
+                <div class="about-text">
+
+                    <p>
+                        Welcome to Cozy Cup Café, your friendly
+                        neighborhood coffee shop. We believe that
+                        great coffee, simple food, and a comfortable
+                        atmosphere can make any day a little brighter.
+                    </p>
+
+                    <p>
+                        Whether you're a student studying for exams,
+                        a remote worker looking for a change of scenery,
+                        or a neighborhood regular catching up with
+                        friends, there's always a seat waiting for you.
+                    </p>
+
+                    <p>
+                        Stop by, grab your favorite drink, and stay
+                        awhile. We're happy you're here!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section section-padding" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">MADE FRESH WITH LOVE</span>
+                    <h2>Our Featured Menu</h2>
+                    <p>A few neighborhood favorites you'll love.</p>
+                </div>
+
+                <div class="menu-grid">
+
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600"
+                            alt="Maple latte in a coffee cup">
+
+                        <div class="menu-info">
+                            <span class="category">SEASONAL DRINK</span>
+                            <h3>Maple Latte</h3>
+                            <p>
+                                Smooth espresso blended with
+                                steamed milk and sweet maple flavor.
+                            </p>
+                            <span class="price">$5.25</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600"
+                            alt="Iced vanilla cold brew coffee">
+
+                        <div class="menu-info">
+                            <span class="category">COFFEE</span>
+                            <h3>Vanilla Cold Brew</h3>
+                            <p>
+                                Slow-steeped coffee with a splash
+                                of creamy vanilla sweetness.
+                            </p>
+                            <span class="price">$4.75</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=600"
+                            alt="Fresh blueberry pastry">
+
+                        <div class="menu-info">
+                            <span class="category">PASTRY</span>
+                            <h3>Blueberry Scone</h3>
+                            <p>
+                                A buttery, freshly baked scone
+                                filled with juicy blueberries.
+                            </p>
+                            <span class="price">$3.50</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=600"
+                            alt="Fresh turkey pesto sandwich">
+
+                        <div class="menu-info">
+                            <span class="category">LUNCH</span>
+                            <h3>Turkey Pesto Sandwich</h3>
+                            <p>
+                                Turkey, fresh greens, pesto,
+                                and cheese on toasted bread.
+                            </p>
+                            <span class="price">$8.95</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Daily Specials Section -->
+        <section class="specials section-padding" id="specials">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">A LITTLE EXTRA HAPPINESS</span>
+                    <h2>Daily Specials</h2>
+                    <p>Something delicious to look forward to every week.</p>
+                </div>
+
+                <button class="btn" id="specialsButton"
+                    aria-expanded="false" aria-controls="specialsList">
+                    Show Weekly Specials +
+                </button>
+
+                <div class="specials-grid hidden" id="specialsList">
+
+                    <article class="special-card">
+                        <span class="special-day">MONDAY</span>
+                        <h3>☕ Coffee Upgrade</h3>
+                        <p>
+                            Enjoy a free size upgrade on any
+                            hot coffee. Start your week right!
+                        </p>
+                    </article>
+
+                    <article class="special-card">
+                        <span class="special-day">WEDNESDAY</span>
+                        <h3>🥐 Pastry Treat</h3>
+                        <p>
+                            Buy one pastry and get a second
+                            pastry half off. Share the sweetness!
+                        </p>
+                    </article>
+
+                    <article class="special-card">
+                        <span class="special-day">FRIDAY</span>
+                        <h3>🍁 Seasonal Sips</h3>
+                        <p>
+                            Enjoy a discount on our featured
+                            seasonal drink every Friday.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Visit Us Section -->
+        <section class="visit section-padding" id="visit">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">COME SAY HELLO</span>
+                    <h2>Visit Our Café</h2>
+                    <p>We can't wait to welcome you!</p>
+                </div>
+
+                <div class="visit-grid">
+
+                    <!-- Contact Information -->
+                    <div class="visit-info">
+
+                        <h3>Find Your Cozy Spot</h3>
+
+                        <div class="info-item">
+                            <span>📍</span>
+                            <div>
+                                <h4>Address</h4>
+                                <p>42 Queen Street West,<br>Toronto, ON</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span>🕒</span>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>
+                                    Monday–Friday: 7:30 AM – 7:00 PM<br>
+                                    Saturday: 8:00 AM – 6:00 PM<br>
+                                    Sunday: 8:00 AM – 4:00 PM
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span>📞</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>416-555-0147</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span>✉️</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@cozycupcafe.ca</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+
+                        <h3>Send Us a Message</h3>
+
+                        <p>
+                            Have a question or just want to say hello?
+                            We'd love to hear from you.
+                        </p>
+
+                        <form id="contactForm">
+
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name"
+                                placeholder="Enter your name" required>
+
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email"
+                                placeholder="Enter your email" required>
+
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5"
+                                placeholder="Write your message..."
+                                required></textarea>
+
+                            <button type="submit" class="btn">
+                                Send Message →
+                            </button>
+
+                            <p id="formMessage" class="form-message"
+                                role="status" aria-live="polite"></p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+            <h3>☕ Cozy Cup Café</h3>
+
+            <p>Coffee, comfort, and community.</p>
+
+            <p class="copyright">
+                © 2026 Cozy Cup Café. Made with love and coffee.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
